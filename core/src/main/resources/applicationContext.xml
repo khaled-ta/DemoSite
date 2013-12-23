@@ -25,10 +25,11 @@
         For this to work properly, this also requires Spring Instrument to be available on your classpath. See the provided
         spring-instrument-3.2.2.RELEASE.jar in the lib directory in the root of this project. This can be passed as -javaagent
         property to the JVM such as -javaagent:/path/to/spring-instrument.3.2.2.RELEASE.jar -->
-    
+<!--
     <bean id="blOfferAuditFixClassTransformer" class="org.broadleafcommerce.common.extensibility.jpa.copy.DirectCopyClassTransformer">
         <constructor-arg name="moduleName" value="Offer Audit Fix" />
         <property name="xformTemplates">
+
             <map>
                 <entry>
                     <key><value>org.broadleafcommerce.core.offer.domain.OfferAuditImpl</value></key>
@@ -50,5 +51,6 @@
         <property name="collectionRef" value="customClassTransformers" />
         <property name="targetRef" value="blMergedClassTransformers" />
     </bean>
-    
+            -->
+
 </beans>
